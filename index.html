@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Expense Tracker</h1>
+      <div class="expense-form">
+        <label for="expense-amount">Choose expense amount:</label>
+        <input type="number" id="expense-amount" placeholder="" />
+        <label for="expense-name">Choose description:</label>
+        <input type="text" id="expense-name" placeholder="" />
+        <label for="expense-category">Choose a category:</label>
+        <select name="cars" id="expense-category">
+          <option value="fuel">Fuel</option>
+          <option value="food">Food</option>
+          <option value="electricity">Electricity</option>
+          <option value="movie">Movies</option>
+        </select>
+        <button id="add-expense">Add Expense</button>
+      </div>
+      <ul id="expense-list"></ul>
+
+      <div class="edit-expense-form" style="display: none">
+        <h2>Edit Expense</h2>
+        <label for="edit-expense-amount">Edit expense amount:</label>
+        <input type="number" id="edit-expense-amount" placeholder="" />
+        <label for="edit-expense-name">Edit description:</label>
+        <input type="text" id="edit-expense-name" placeholder="" />
+        <label for="edit-expense-category">Edit category:</label>
+        <select name="edit-cars" id="edit-expense-category">
+          <option value="fuel">Fuel</option>
+          <option value="food">Food</option>
+          <option value="electricity">Electricity</option>
+          <option value="movie">Movies</option>
+        </select>
+        <button id="save-expense">Save Expense</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
